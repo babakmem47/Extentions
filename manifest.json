@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+  
+    "name": "1. Save History of Bursts. 2.Login again if logout and read existing burst and sync with internal database",
+    "description": "This extension read data from DOM elements in page and click on buttons",
+    "version": "1.1",
+  
+    "icons": { "16": "software-properties_16.png",
+             "48": "software-properties_48.png",
+            "128": "software-properties_128.png" },  
+    "content_scripts": [{
+      "matches": ["http://cuz90.com/games/crash/*"],
+      "js": ["keepHistory.js"]
+    }]
+  }
+  
