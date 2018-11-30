@@ -4,7 +4,7 @@ window.onload = function () {
     var burstHistory = [];
     var currentBurst = 666;
     var looseCount = 0;
-    var mablagh = 5;
+    var mablagh = 50;
     var zarib = 3.00;
     var playing = false;
     document.getElementsByClassName("cashout-amount")[0].value = 3.00;
@@ -29,67 +29,67 @@ window.onload = function () {
                 if (zarib > currentBurst) {  // loose
                     looseCount++;
                     if (looseCount == 1) {
-                        mablagh = 5;
+                        mablagh = 75;
                     }
                     else if (looseCount == 2) {
-                        mablagh = 8;
+                        mablagh = 113;
                     }
                     else if (looseCount == 3) {
-                        mablagh = 12;
+                        mablagh = 144;
                     }
                     else if (looseCount == 4) {
-                        mablagh = 18;
+                        mablagh = 216;
                     }
                     else if (looseCount == 5) {
-                        mablagh = 27;
+                        mablagh = 324;
                     }
                     else if (looseCount == 6) {
-                        mablagh = 40;
+                        mablagh = 486;
                     }
                     else if (looseCount == 7) {
-                        mablagh = 60;
+                        mablagh = 729;
                     }
                     else if (looseCount == 8) {
-                        mablagh = 90;
+                        mablagh = 1094;
                     }
                     else if (looseCount == 9) {
-                        mablagh = 135;                        
+                        mablagh = 1641;                        
                     }
                     else if (looseCount == 10) {
-                        mablagh = 203;
+                        mablagh = 2461;
                     }
                     else if (looseCount == 11) {
-                        mablagh = 304;
+                        mablagh = 3692;
                     }
                     else if (looseCount == 12) {
-                        mablagh = 456;
+                        mablagh = 5538;
                     }
                     else if (looseCount == 13) {
-                        mablagh = 684;
+                        mablagh = 8307;
                     }
                     else if (looseCount == 14) {
-                        mablagh = 1026;
+                        mablagh = 12460;
                     }
                     else if (looseCount == 15) {
-                        mablagh = 1539;
+                        mablagh = 18690;
                     }
 					else if (looseCount == 16) {
-                        mablagh = 2309;
+                        mablagh = 28035;
                     }
 					else if (looseCount == 17) {
-                        mablagh = 3463;
+                        mablagh = 42053;
                     }
 					else if (looseCount == 18) {
-                        mablagh = 5195;
+                        mablagh = 63079;
                     }
 					else if (looseCount == 19) {
-                        mablagh = 7792;
+                        mablagh = 94619;
                     }
 					
                     
                 }
                 else {                      // win
-                    mablagh = 5;
+                    mablagh = 50;
                     looseCount = 0;
                 }
                 document.getElementsByClassName("game-amount")[0].value = mablagh;
@@ -97,7 +97,7 @@ window.onload = function () {
                 betButton.click();
             }
             else {
-                document.getElementsByClassName("game-amount")[0].value = 5;
+                document.getElementsByClassName("game-amount")[0].value = 50;
                 var betButton = document.getElementsByClassName("place-bet")[0];
                 betButton.click();
                 playing = true;
